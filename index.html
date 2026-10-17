@@ -45,6 +45,12 @@
       <div class="search-mode" id="panel-filters" role="tabpanel" aria-labelledby="tab-filters" hidden>
         <form id="filter-search-form" class="filter-form">
           <div class="filter-field filter-ingredients"><label for="available-ingredients">Ingredientes disponibles</label><input id="available-ingredients" name="ingredients" type="text" placeholder="Ej.: huevos, tomate, arroz"></div>
+          <fieldset class="filter-dietary"><legend>Preferencias alimentarias</legend><div class="dietary-options">
+            <label class="dietary-option"><input type="checkbox" name="dietary" value="vegetariana"> <span>Recetas vegetarianas</span></label>
+            <label class="dietary-option"><input type="checkbox" name="dietary" value="vegana"> <span>Recetas veganas</span></label>
+            <label class="dietary-option"><input type="checkbox" name="dietary" value="sin-gluten"> <span>Recetas sin gluten</span></label>
+            <label class="dietary-option"><input type="checkbox" name="dietary" value="sin-lactosa"> <span>Recetas sin lactosa</span></label>
+          </div></fieldset>
           <div class="filter-field"><label for="available-time">Tiempo disponible</label><select id="available-time" name="time"><option value="">Cualquier tiempo</option><option value="15">Hasta 15 minutos</option><option value="30">Hasta 30 minutos</option><option value="60">Hasta 1 hora</option></select></div>
           <div class="filter-field"><label for="dish-type">Tipo de plato</label><select id="dish-type" name="type"><option value="">Todos los platos</option><option value="entrantes">Entrantes</option><option value="principales">Platos principales</option><option value="guarniciones">Guarniciones</option><option value="postres">Postres</option></select></div>
           <button class="button button-primary filter-submit" type="submit">Buscar ideas <span>→</span></button>
